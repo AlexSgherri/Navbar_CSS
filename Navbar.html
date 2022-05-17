@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="vieport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=no"
+    />
+    <link rel="stylesheet" href="navbar.css" />
+    <title>Esercizio Navbar</title>
+  </head>
+
+  <!--
+    Partendo dalla navbar realizzata nell'esercizio 10 di HTML, aggiungi il css. 
+    Il bottone Search in hover diventa verde con il testo bianco. Gestisci anche il 
+    responsive, da 768px in giù nascondi tutti gli elementi presenti tranne "Navbar" 
+    e al loro posto, nella parte destra della navbar, deve apparire un hamburger menù (senza funzionalità).
+
+-->
+
+  <body>
+    <nav>
+      <ul>
+        <li>Navbar</li>
+        <li class="not-visible">
+          <strong><a href="#5">Home</a></strong>
+        </li>
+        <li class="not-visible"><a href="#4">Link</a></li>
+        <li class="not-visible">
+          <div class="dropdown">
+            <button class="dropdown-button">Dropdown <small>▼</small></button>
+            <div class="dropdown-links">
+              <a href="#1">Prodotto1</a>
+              <a href="#2">Prodotto2</a>
+              <a href="#3">Prodotto3</a>
+            </div>
+          </div>
+        </li>
+        <li class="not-visible">
+          <button class="disabled" disabled>Disable</button>
+        </li>
+        <form class="not-visible" action="#">
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="   Search"
+          />
+          <input class="button-search" type="submit" value="Search" />
+        </form>
+        <li>
+          <div class="dropdown" id="show-visible">
+            <button class="dorpdown-button">
+              Menù hamburger <small>▼</small>
+            </button>
+            <div class="dropdown-links">
+              <a href="#6">Hamburger1</a>
+              <a href="#7">Hamburger2</a>
+              <a href="#8">Hamburger3</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
